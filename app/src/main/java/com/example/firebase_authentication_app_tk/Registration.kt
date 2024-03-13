@@ -2,10 +2,18 @@ package com.example.firebase_authentication_app_tk
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.EditText
+import com.google.firebase.auth.FirebaseAuth
 
 class Registration : AppCompatActivity() {
 
-    //Variables
+    //VARIABLES
+    lateinit var edUsername : EditText
+    lateinit var edEmailReg : EditText
+    lateinit var edPasswordReg : EditText
+    lateinit var edConfirmPasswordReg : EditText
+
+    lateinit var mAuth :FirebaseAuth
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,7 +21,12 @@ class Registration : AppCompatActivity() {
         setContentView(R.layout.activity_registration)
 
 
-        //typecast
+        //TypeCasting
+        edUsername = findViewById(R.id.edUsername)
+        edEmailReg = findViewById(R.id.edEmails)
+        edPasswordReg = findViewById(R.id.edPasswordReg)
+        edConfirmPasswordReg = findViewById(R.id.edPasswordReg2)
+        mAuth = FirebaseAuth.getInstance()
 
     }
 }
