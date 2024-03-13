@@ -11,7 +11,6 @@ import com.google.firebase.auth.FirebaseAuth
 class MainActivity : AppCompatActivity() {
 
     //Variables
-    //FIREBASE
     lateinit var btnLog : Button
     lateinit var edEmails : EditText
     lateinit var edPasswords : EditText
