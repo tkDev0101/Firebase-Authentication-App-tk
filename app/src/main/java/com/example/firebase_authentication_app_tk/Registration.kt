@@ -3,20 +3,17 @@ package com.example.firebase_authentication_app_tk
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class MainActivity : AppCompatActivity() {
+class Registration : AppCompatActivity() {
 
     //Variables
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_registration)
 
 
         //typecast
-
-
-
 
     }
 }
